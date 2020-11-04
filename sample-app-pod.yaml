@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+   name: sample-app
+   labels:
+      name: sample-app
+spec:
+   containers:
+      - name: sample-app
+        image: santhiyad/sample-app
+        ports:
+           - containerPort: 80
